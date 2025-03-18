@@ -31,7 +31,7 @@ cd executor/executor/bin
 # Configure environment variables
 echo "⚙️ Configuring environment settings..."
 sudo bash -c "cat > $ENV_FILE" <<EOL
-RPC_ENDPOINTS="{\"l2rn\": [\"https://b2n.rpc.caldera.xyz/http\"], \"arbt\": [\"https://arbitrum-sepolia.drpc.org\", \"https://sepolia-rollup.arbitrum.io/rpc\"], \"bast\": [\"https://base-sepolia-rpc.publicnode.com\", \"https://base-sepolia.drpc.org\"], \"opst\": [\"https://sepolia.optimism.io\", \"https://optimism-sepolia.drpc.org\"], \"unit\": [\"https://unichain-sepolia.drpc.org\", \"https://sepolia.unichain.org\"]}"
+RPC_ENDPOINTS="{\"l2rn\": [\"https://b2n.rpc.caldera.xyz/http\"], \"arbt\": [\"https://arbitrum-sepolia.drpc.org\", \"https://sepolia-rollup.arbitrum.io/rpc\", \"https://arb-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://arb-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"bast\": [\"https://base-sepolia-rpc.publicnode.com\", \"https://base-sepolia.drpc.org\", \"https://base-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://base-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"opst\": [\"https://sepolia.optimism.io\", \"https://optimism-sepolia.drpc.org\", \"https://opt-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://opt-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"unit\": [\"https://unichain-sepolia.drpc.org\", \"https://sepolia.unichain.org\", \"https://unichain-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://unichain-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"]}"
 EOL
 
 # Set permissions
