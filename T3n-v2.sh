@@ -31,7 +31,7 @@ cd executor/executor/bin
 # Configure environment variables
 echo "⚙️ Configuring environment settings..."
 sudo bash -c "cat > $ENV_FILE" <<EOL
-RPC_ENDPOINTS="{\"l2rn\": [\"https://b2n.rpc.caldera.xyz/http\"], \"arbt\": [\"https://arbitrum-sepolia.drpc.org\", \"https://sepolia-rollup.arbitrum.io/rpc\", \"https://arb-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://arb-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"bast\": [\"https://base-sepolia-rpc.publicnode.com\", \"https://base-sepolia.drpc.org\", \"https://base-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://base-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"opst\": [\"https://sepolia.optimism.io\", \"https://optimism-sepolia.drpc.org\", \"https://opt-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://opt-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"unit\": [\"https://unichain-sepolia.drpc.org\", \"https://sepolia.unichain.org\", \"https://unichain-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://unichain-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"]}"
+RPC_ENDPOINTS="{\"l2rn\": [\"https://b2n.rpc.caldera.xyz/http\"], \"arbt\": [\"https://arbitrum-sepolia.drpc.org\", \"https://sepolia-rollup.arbitrum.io/rpc\", \"https://arb-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://arb-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"base\": [\"https://base-sepolia-rpc.publicnode.com\", \"https://base-sepolia.drpc.org\", \"https://base-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://base-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"opst\": [\"https://sepolia.optimism.io\", \"https://optimism-sepolia.drpc.org\", \"https://opt-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://opt-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"], \"unit\": [\"https://unichain-sepolia.drpc.org\", \"https://sepolia.unichain.org\", \"https://unichain-sepolia.g.alchemy.com/v2/bLFrp9TaOS7t2DKivrs7HF6kdoeiBhWi\", \"https://unichain-sepolia.g.alchemy.com/v2/7R1EuN8gJJQKYZX3VI8mm_aAAWOmIIDj\"]}"
 EOL
 
 # Set permissions
@@ -47,7 +47,7 @@ screen -dmS t3rn bash -c "cd $INSTALL_DIR/executor/executor/bin && \
     EXECUTOR_PROCESS_BIDS_ENABLED=true \
     EXECUTOR_PROCESS_ORDERS_ENABLED=true \
     EXECUTOR_PROCESS_CLAIMS_ENABLED=true \
-    EXECUTOR_MAX_L3_GAS_PRICE=500 \
+    EXECUTOR_MAX_L3_GAS_PRICE=1000 \
     PRIVATE_KEY_LOCAL=$PRIVATE_KEY_LOCAL \
     ENABLED_NETWORKS=arbitrum-sepolia,base-sepolia,optimism-sepolia,l2rn \
     EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true \
