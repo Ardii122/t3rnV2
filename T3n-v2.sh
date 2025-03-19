@@ -47,7 +47,7 @@ screen -dmS t3rn bash -c "cd $INSTALL_DIR/executor/executor/bin && \
     EXECUTOR_PROCESS_BIDS_ENABLED=true \
     EXECUTOR_PROCESS_ORDERS_ENABLED=true \
     EXECUTOR_PROCESS_CLAIMS_ENABLED=true \
-    EXECUTOR_MAX_L3_GAS_PRICE=1000 \
+    EXECUTOR_MAX_L3_GAS_PRICE=100 \
     PRIVATE_KEY_LOCAL=$PRIVATE_KEY_LOCAL \
     ENABLED_NETWORKS=arbitrum-sepolia,base-sepolia,optimism-sepolia,l2rn \
     EXECUTOR_PROCESS_PENDING_ORDERS_FROM_API=true \
